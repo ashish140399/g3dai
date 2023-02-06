@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #040e2f;
+    color: #fff;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.MuiButton-root {
+    background: #c4fc04 !important;
+    color: #040e2f !important;
+    text-transform: unset !important;
+    padding: 10px 18px !important;
+    border-radius: 12px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+.MuiLink-root {
+    color: #fff !important;
+}
+.MuiFormControl-root {
+    margin-bottom: 14px !important;
+}
+.MuiCheckbox-root {
+    svg {
+        path {
+            fill: rgba(255, 255, 255, 0.9) !important;
+        }
+    }
+}
+.MuiInputLabel-root {
+    color: #fff !important;
+}
+.MuiInputBase-root {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px !important;
+    color: #fff !important;
+    fieldset {
+        border-color: rgba(255, 255, 255, 0.5) !important;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    -webkit-text-fill-color: #fff !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.1) inset !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+.avatarbox {
+    height: 100px;
+    img {
+        height: 100%;
+    }
+}
