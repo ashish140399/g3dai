@@ -80,7 +80,7 @@ export default function Home() {
             {
                 headers: {
                     "Content-Type": "application/json",
-                    Authorization: `Bearer ${API_KEY}`,
+                    "Authorization": `Bearer ${API_KEY}`,
                 },
             }
         );
