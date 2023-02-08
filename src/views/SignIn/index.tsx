@@ -11,6 +11,7 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Copyright from "../shared/Copyright";
+import styled from "styled-components";
 
 export default function SignIn() {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -23,21 +24,17 @@ export default function SignIn() {
     };
 
     return (
-        <>
+        <Layout>
             <Container component="main" maxWidth="xs">
                 <Box
                     sx={{
-                        marginTop: 8,
                         display: "flex",
                         flexDirection: "column",
-                        alignItems: "center",
+                        alignItems: "flex-start",
                     }}
                 >
-                    <div className="avatarbox">
-                        <img src={"./avatar.gif"} alt="loading..." />
-                    </div>
-                    <Typography component="h1" variant="h5">
-                        Sign in
+                    <Typography component="h1" variant="h5" className="heading">
+                        Log in
                     </Typography>
                     <Box
                         component="form"
@@ -45,41 +42,42 @@ export default function SignIn() {
                         noValidate
                         sx={{ mt: 1 }}
                     >
+                        <div className="textfieldlabel">Email</div>
                         <TextField
-                            margin="normal"
+                            style={{ marginBottom: "20px !important" }}
                             required
                             fullWidth
                             id="email"
-                            label="Email Address"
                             name="email"
                             autoComplete="email"
                             autoFocus
+                            placeholder="Enter your email"
                         />
+                        <div className="textfieldlabel">Password</div>
                         <TextField
-                            margin="normal"
                             required
                             fullWidth
                             name="password"
-                            label="Password"
                             type="password"
                             id="password"
                             autoComplete="current-password"
+                            placeholder="Enter your password"
                         />
-                        <FormControlLabel
+                        {/* <FormControlLabel
                             control={
                                 <Checkbox value="remember" color="primary" />
                             }
                             label="Remember me"
-                        />
+                        /> */}
                         <Button
                             type="submit"
                             fullWidth
                             variant="contained"
-                            sx={{ mt: 3, mb: 2 }}
+                            style={{ marginTop: "8px" }}
                         >
-                            Sign In
+                            Log in
                         </Button>
-                        <Grid container>
+                        {/* <Grid container>
                             <Grid item xs>
                                 <Link href="#" variant="body2">
                                     Forgot password?
@@ -90,11 +88,27 @@ export default function SignIn() {
                                     {"Don't have an account? Sign Up"}
                                 </Link>
                             </Grid>
-                        </Grid>
+                        </Grid> */}
                     </Box>
                 </Box>
-                <Copyright sx={{ mt: 8, mb: 4 }} />
+                {/* <Copyright sx={{ mt: 8, mb: 4 }} /> */}
             </Container>
-        </>
+        </Layout>
     );
 }
+
+const Layout = styled.div`
+    display: flex;
+    align-items: Center;
+    min-height: 100vh;
+    .heading {
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 32px;
+    }
+    .textfieldlabel {
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+`;
