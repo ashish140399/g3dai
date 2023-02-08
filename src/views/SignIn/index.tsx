@@ -22,7 +22,6 @@ export default function SignIn() {
             password: data.get("password"),
         });
     };
-    console.log(process.env.REACT_APP_API_KEY);
     return (
         <Layout>
             <Container component="main" maxWidth="xs">
