@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700;800&display=swap");
+body {
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #040e2f;
+    color: #fff;
+}
+
+* {
+    font-family: "Roboto Mono", monospace !important;
+}
+.MuiTypography-root {
+    font-family: "Roboto Mono", monospace !important;
+}
+
+.MuiButton-root {
+    background: #c4fc04 !important;
+    color: #040e2f !important;
+    text-transform: unset !important;
+    padding: 6px 18px !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+.MuiLink-root {
+    color: #fff !important;
+}
+.MuiFormControl-root {
+    margin-bottom: 20px !important;
+}
+.MuiCheckbox-root {
+    svg {
+        path {
+            fill: rgba(255, 255, 255, 0.9) !important;
+        }
+    }
+}
+.MuiInputLabel-root {
+    color: #fff !important;
+}
+.MuiInputBase-root {
+    background: #424d6d !important;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05) !important;
+    border-radius: 8px !important;
+    color: #fff !important;
+    .MuiInputBase-input {
+        padding: 10px 16px !important;
+        &::placeholder {
+            font-style: normal;
+            font-weight: 400 !important;
+            font-size: 16px !important;
+            color: #e0e0e0 !important;
+        }
+    }
+}
+textarea {
+    padding: 10px 16px !important;
+    background: #424d6d !important;
+    border-radius: 8px !important;
+    color: #fff !important;
+    font-size: 16px;
+    border: 0;
+    width: 100%;
+    outline: 0 !important;
+    box-sizing: border-box !important;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05) !important;
+    &::placeholder {
+        font-style: normal;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        color: #e0e0e0 !important;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 0 !important;
+    -webkit-text-fill-color: #fff !important;
+    -webkit-box-shadow: 0 0 0px 1000px #424d6d inset !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+.avatarbox {
+    height: 100px;
+    img {
+        height: 100%;
+    }
+}
