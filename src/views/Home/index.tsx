@@ -18,6 +18,7 @@ const axios = require("axios");
 const { Configuration, OpenAIApi } = require("openai");
 // require("dotenv").config();
 const fs = require("fs");
+console.log(process.env.REACT_APP_API_KEY);
 
 export default function Home() {
     let htmlContent = `<!DOCTYPE html>
