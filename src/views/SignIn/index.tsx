@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import Link from "@mui/material/Link";
+import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
@@ -75,7 +75,7 @@ export default function SignIn() {
                             variant="contained"
                             style={{ marginTop: "8px" }}
                         >
-                            Log in
+                            <Link to="/mechanic">Log in</Link>
                         </Button>
                         {/* <Grid container>
                             <Grid item xs>
@@ -110,5 +110,12 @@ const Layout = styled.div`
         font-weight: 500;
         font-size: 14px;
         margin-bottom: 8px;
+    }
+    button {
+        a {
+            text-decoration: none;
+            color: #040e2f !important;
+            font-weight: 600 !important;
+        }
     }
 `;
