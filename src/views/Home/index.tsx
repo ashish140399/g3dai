@@ -59,7 +59,7 @@ export default function Home() {
     const handleOutputChange = (event: SelectChangeEvent) => {
         setOutputwork(event.target.value as string);
     };
-    const API_KEY = "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";
+    const API_KEY = "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";
     const configuration = new Configuration({
         apiKey: API_KEY,
     });
