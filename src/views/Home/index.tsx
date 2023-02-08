@@ -59,8 +59,9 @@ export default function Home() {
     const handleOutputChange = (event: SelectChangeEvent) => {
         setOutputwork(event.target.value as string);
     };
+    const API_KEY = "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";
     const configuration = new Configuration({
-        apiKey: "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",
+        apiKey: API_KEY,
     });
     const openai = new OpenAIApi(configuration);
     const fetchData = async () => {
@@ -79,6 +80,7 @@ export default function Home() {
             {
                 headers: {
                     "Content-Type": "application/json",
+                    Authorization: `Bearer ${API_KEY}`,
                 },
             }
         );
