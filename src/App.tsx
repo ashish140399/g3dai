@@ -4,6 +4,9 @@ import SignIn from "./views/SignIn";
 import SignUp from "./views/SignUp";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+// const dotenv = require("dotenv");
+// const env = dotenv.config().parsed;
+
 function App() {
     return (
         <BrowserRouter>
